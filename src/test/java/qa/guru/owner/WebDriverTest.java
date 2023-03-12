@@ -15,6 +15,7 @@ public class WebDriverTest {
 
     @BeforeEach
     public void startDriver() {
+
         driver = new WebDriverProvider().get();
     }
 
