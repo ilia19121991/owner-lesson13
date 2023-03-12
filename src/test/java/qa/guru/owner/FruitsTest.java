@@ -31,4 +31,12 @@ public class FruitsTest {
 
     }
 
+    @Test
+    public void testArrayWithSeparator() {
+
+        FruitsConfig config = ConfigFactory.create(FruitsConfig.class, System.getProperties());
+        assertThat(config.getFruitsListWithSeparator()).containsExactly("orange" , "banana");
+
+    }
+
 }
