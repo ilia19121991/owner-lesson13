@@ -20,6 +20,7 @@ public class WebDriverProvider implements Supplier<WebDriver> {
     public WebDriver get() {
         WebDriver driver = createDriver();
         driver.get(config.getBaseUrl());
+
         return driver;
     }
 
