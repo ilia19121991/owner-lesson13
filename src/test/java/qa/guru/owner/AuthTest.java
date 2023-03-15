@@ -23,6 +23,9 @@ public class AuthTest {
 
     }
 
+    /**
+     не проходит, потому что у меня нет этого "секретного" файла
+     */
     @Test
     public void testAuthWithSecretFile() throws Exception {
         String content = "username=secret-user\npassword=secret-pass";
